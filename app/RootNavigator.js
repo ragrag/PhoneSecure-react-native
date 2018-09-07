@@ -1,5 +1,5 @@
 import { StackNavigator } from 'react-navigation';
-
+import {TouchableOpacity,Text} from 'react-native';
 import Tabs from './Tabs';
 import Login from './Login';
 import Splash from './Splash';
@@ -19,11 +19,13 @@ const RootNavigator = StackNavigator({
 
     Home: {
         screen: Tabs,
-        navigationOptions: {
-            title: 'Home',
-            header:null,
+        navigationOptions: ({ navigation }) => ({
+            title: 'PhoneSecure',
             headerLeft:null,
-        }
+            headerRight:  <TouchableOpacity style={logoutBtnStyle} >
+                            <Text>Logout</Text>
+                         </TouchableOpacity>
+        })
     },
     Login: {
         screen: Login,

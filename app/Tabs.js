@@ -6,7 +6,7 @@ const Tabs =  TabNavigator({
 
 Home: Home,
 
-Home2:Home2
+Home2:Home2,
 
 
 
