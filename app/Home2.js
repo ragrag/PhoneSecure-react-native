@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
   appCol: {
     flexDirection:'row', 
     height:50
-  }, 
+  },
   whiteText :{
     color:'#FFFFFF',
     textAlign: 'center'

@@ -1,26 +1,35 @@
 import { StackNavigator } from 'react-navigation';
 
-import Home from './Home';
+import Tabs from './Tabs';
 import Login from './Login';
+import Splash from './Splash';
 
 const RootNavigator = StackNavigator({
 
 
- 
+    Splash: {
+        screen: Splash,
+        navigationOptions:{
+            header: null ,
+           
+
+        }
+    },
 
 
     Home: {
-        screen: Home,
+        screen: Tabs,
         navigationOptions: {
             title: 'Home',
-            headerLeft:false,
+            header:null,
+            headerLeft:null,
         }
     },
     Login: {
         screen: Login,
         navigationOptions: {
         title: 'Login',
-        headerLeft: false
+        headerLeft: null,
         }
     },
 

@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
-import { Text, StyleSheet , ToastAndroid, View} from 'react-native';
+import { AsyncStorage } from 'react-native';
 import axios from 'axios';
 import { Button, Card, CardItem, Input, Spinner } from './common';
 import Toast from 'react-native-simple-toast';
 
+
+const instance = axios.create();
+instance.defaults.timeout = 2500;
 class LoginForm extends Component {
 
   constructor() {
-    super();
+    super(); 
     this.state = {
       username: '',
       password: '',
@@ -15,27 +18,47 @@ class LoginForm extends Component {
     };
   }
 
+  componentWillMount(){
 
- 
+    AsyncStorage.getItem('login_token').then( (token)=>{
+
+console.log(token);
+    });
+  }
+
 
   _onLoginPressed() {
-
-    
        this.setState({loading:true});
     //ToastAndroid.show('A pikachu appeared nearby !', ToastAndroid.SHORT);
-    axios.post('http://41.232.67.202:3000/api/login',{
+
+    instance.post('http://41.232.227.47:3000/api/login',{
         username:this.state.username,
         password:this.state.password
     }).then( (res)=>{
            this.setState({loading:false});
+
         //console.log(res.data);
         if(res.data.success)
-        Toast.show('Success.');
+        {
+            AsyncStorage.setItem('login_token',res.data.token).then(()=>{
+                Toast.show('Logged in');
+                this.props.navigation.navigate('Home');
+                
+            }).catch((err)=>{
+               
+                Toast.show("Error logging in");
+
+            });
+        
+            
+        }
         else 
-        Toast.show('Fail');
+            Toast.show(res.data.message);
 
     }).catch( (err)=>{
-console.log(err);
+        this.setState({loading:false});
+        
+        console.log(err);
     });
     
 
