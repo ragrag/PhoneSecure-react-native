@@ -1,14 +1,32 @@
-import {TabNavigator} from 'react-navigation';
+import {createBottomTabNavigator , TabNavigator,TabBarBottom} from 'react-navigation';
+import {Text} from 'react-native';
+import Profile from './Profile'
+import ThisDevice from './ThisDevice'
+const Tabs = TabNavigator({
 
-import Home from './Home'
-import Home2 from './Home2'
-const Tabs =  TabNavigator({
+    ThisDevice: {
+        screen: ThisDevice,
+        navigationOptions: ({ navigation }) => ({
+            tabBarLabel:('This Device'),
+          
+        }),
+        
+    },
 
-Home: Home,
+    
 
-Home2:Home2,
+Profile: Profile,
 
 
+},{tabBarOptions: {
+    activeTintColor: '#FFFFFF',
+    labelStyle: {
+      fontSize: 12,
+    },
+    style: {
+      backgroundColor: '#2a3744',
+    },
+  }
 
 });
 

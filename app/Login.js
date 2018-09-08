@@ -31,7 +31,7 @@ console.log(token);
        this.setState({loading:true});
     //ToastAndroid.show('A pikachu appeared nearby !', ToastAndroid.SHORT);
 
-    instance.post('http://41.232.227.47:3000/api/login',{
+    instance.post('http://197.46.75.21:3000/api/login',{
         username:this.state.username,
         password:this.state.password
     }).then( (res)=>{
