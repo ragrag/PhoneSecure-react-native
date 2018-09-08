@@ -1,37 +1,36 @@
 import React, { Component } from 'react';
 import {BackHandler, Platform , StyleSheet, Text, View ,ToastAndroid, TouchableOpacity,AsyncStorage} from 'react-native';
 
-
+const IMEI = require('react-native-imei');
 import Header from './template/Header';
 import { Button} from './common/';
 
-import DeviceInfo from 'react-native-device-info';
-
-import Toast from 'react-native-simple-toast';
-const test= DeviceInfo.getBrand();
+const imei = IMEI.getImei();
 class ThisDevice extends Component {
   
 
-  // constructor() {
-  //   super(); 
-  //   this.state = {
-  //     manf: '',
-  //     model: '',
-  //     loading:false
-  //   };
-  // }
+  constructor() {
 
-//   componentDidMount() {
+    super(); 
+    this.state = {
+      manf:Expo.Constants.deviceName,
+      model: Expo.Constants.model,
+      imei:imei ,
+      loading:false
+    };
+    
+  }
 
-// }
-
+ 
 
   render() {
     return (
       
     <View style={styles.container}>
       <Header title='This Device'></Header>
-      <Text style={styles.whiteText}>{test}</Text>
+      <Text style={styles.whiteText}>{this.state.model}</Text>
+      <Text style={styles.whiteText}>{this.state.manf}</Text>
+      <Text style={styles.whiteText}>{this.state.imei}</Text>
     </View>
      
     );
