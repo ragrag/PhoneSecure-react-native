@@ -5,7 +5,7 @@ const IMEI = require('react-native-imei');
 import Header from './template/Header';
 import { Button} from './common/';
 
-const imei = IMEI.getImei();
+//const imei = IMEI.getImei();
 class ThisDevice extends Component {
   
 
@@ -15,7 +15,7 @@ class ThisDevice extends Component {
     this.state = {
       manf:'brand',
       model: 'model',
-      imei:imei ,
+      imei:'imei' ,
       loading:false
     };
     

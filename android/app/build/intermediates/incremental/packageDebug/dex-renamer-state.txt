@@ -1,0 +1,4 @@
+#Sat Sep 08 15:19:35 EET 2018
+base.0=F\:\\Projects\\react-native\\PhoneSecureRN\\android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+renamed.0=classes.dex
+file.0=F\:\\Projects\\react-native\\PhoneSecureRN\\android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

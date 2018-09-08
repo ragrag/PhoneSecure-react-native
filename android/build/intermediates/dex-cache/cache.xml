@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\ragrag\.android\build-cache\130f9c757418493a71b5bccf145263ab79abc7d5\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
+        <dex dex="F:\Projects\react-native\PhoneSecureRN\android\app\build\intermediates\pre-dexed\debug\classes_1d16945967a1777133da5586064f15f2cc6a1e56.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ragrag\.android\build-cache\d1e9cd5d527446d9c0fc77b80e8d0e2a2c8b5b91\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="F:\Projects\react-native\PhoneSecureRN\android\app\build\intermediates\pre-dexed\debug\classes_136a25311e239868eb444ce5b74ecb6cbb22da6d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ragrag\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.13.0\a9283170b7305c8d92d25aff02a6ab7e45d06cbe\okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="F:\Projects\react-native\PhoneSecureRN\android\app\build\intermediates\pre-dexed\debug\okio-1.13.0_489942f375766d4f58291343b976c0f887739bae.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ragrag\.android\build-cache\f218c973b06b1590b6edc761f773023b295d5547\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
+        <dex dex="F:\Projects\react-native\PhoneSecureRN\android\app\build\intermediates\pre-dexed\debug\classes_1b7a464eb6aa72f23cfac5652221128245439804.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ragrag\.android\build-cache\59c71c7987cae41d8aaf5c38444e4968a926ee09\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="e31331bdf6b5952badadbfc171f04b95c55d3b16">
+        <dex dex="F:\Projects\react-native\PhoneSecureRN\android\app\build\intermediates\pre-dexed\debug\classes_664f3324792c314988bef185a020ac3b566754a5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ragrag\.android\build-cache\fa7869675c9ff69233ebbfa2f7c8d7f3e1553567\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="F:\Projects\react-native\PhoneSecureRN\android\app\build\intermediates\pre-dexed\debug\classes_69398eaa687d105651a26438f58a5acc3fd3c4f6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ragrag\.android\build-cache\cee94e78d7b5b889316ecb18c14c732488cd409f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
+        <dex dex="F:\Projects\react-native\PhoneSecureRN\android\app\build\intermediates\pre-dexed\debug\classes_5c5434fe8aa6b3522e634c63a298e9083e901857.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Projects\react-native\PhoneSecureRN\node_modules\react-native-imei\android\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="e26c5a747be65a14d8760235e02f00f098dcd432">
+        <dex dex="F:\Projects\react-native\PhoneSecureRN\android\app\build\intermediates\pre-dexed\debug\classes_632023b25ed7ede8f23cb75683adc95ce126c171.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ragrag\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.6.0\69edde9fc4b01c9fd51d25b83428837478c27254\okhttp-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="F:\Projects\react-native\PhoneSecureRN\android\app\build\intermediates\pre-dexed\debug\okhttp-3.6.0_6a6c420085c23d01de9e1ca22784342c95427f96.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ragrag\.android\build-cache\59c71c7987cae41d8aaf5c38444e4968a926ee09\output\jars\libs\infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="F:\Projects\react-native\PhoneSecureRN\android\app\build\intermediates\pre-dexed\debug\infer-annotations-4.0_ec4d9e93263385119c687ac45b5806aa4bfde847.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ragrag\.android\build-cache\b2d988a05f6a64765ff66f4ad328d4968f8a9af1\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
+        <dex dex="F:\Projects\react-native\PhoneSecureRN\android\app\build\intermediates\pre-dexed\debug\classes_3cb62c6b31579745cd65ebedf20e185f44b3ec02.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ragrag\.android\build-cache\c729f630c20367c22eb17e72685dc16ed443a39b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
+        <dex dex="F:\Projects\react-native\PhoneSecureRN\android\app\build\intermediates\pre-dexed\debug\classes_e06b4088693b4ca5595a113cb6f1fa80ebe2d2dd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ragrag\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp-urlconnection\3.6.0\3f9b16b774f2c36cfd86dd2053d0b3059531dacc\okhttp-urlconnection-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="F:\Projects\react-native\PhoneSecureRN\android\app\build\intermediates\pre-dexed\debug\okhttp-urlconnection-3.6.0_5a713a368f7998afb86091f7f497f7cd32d8895c.jar" />
+    </item>
+
+</items>
