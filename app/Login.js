@@ -37,7 +37,7 @@ console.log(token);
     }).then( (res)=>{
            this.setState({loading:false});
 
-        //console.log(res.data);
+        console.log(res.data);
         if(res.data.success)
         {
             AsyncStorage.setItem('login_token',res.data.token).then(()=>{

@@ -5,11 +5,25 @@ import {BackHandler, Platform , StyleSheet, Text, View ,ToastAndroid, TouchableO
 import Header from './template/Header';
 import { Button} from './common/';
 
+import DeviceInfo from 'react-native-device-info';
 
-
+import Toast from 'react-native-simple-toast';
+const test= DeviceInfo.getBrand();
 class ThisDevice extends Component {
   
 
+  // constructor() {
+  //   super(); 
+  //   this.state = {
+  //     manf: '',
+  //     model: '',
+  //     loading:false
+  //   };
+  // }
+
+//   componentDidMount() {
+
+// }
 
 
   render() {
@@ -17,6 +31,7 @@ class ThisDevice extends Component {
       
     <View style={styles.container}>
       <Header title='This Device'></Header>
+      <Text style={styles.whiteText}>{test}</Text>
     </View>
      
     );
