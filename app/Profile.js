@@ -30,7 +30,7 @@ class Profile extends Component {
 const styles = StyleSheet.create({
   container:{
     flex:1,
-    paddingTop: Platform.OS === 'ios' ? 0 : Expo.Constants.statusBarHeight,
+    paddingTop: Platform.OS === 'ios' ? 0 : 0,
     backgroundColor:'#212121'
   },
   

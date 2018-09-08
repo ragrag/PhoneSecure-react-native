@@ -1,10 +1,8 @@
-package com.phonesecure;
+package com.phonesecurern;
 
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
-import codes.simen.IMEI.IMEI;
-import com.learnium.RNDeviceInfo.RNDeviceInfo;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
@@ -24,9 +22,7 @@ public class MainApplication extends Application implements ReactApplication {
     @Override
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
-          new MainReactPackage(),
-            new IMEI(),
-            new RNDeviceInfo()
+          new MainReactPackage()
       );
     }
 
