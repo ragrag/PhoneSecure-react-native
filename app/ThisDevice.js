@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import {BackHandler, Platform , StyleSheet, Text, View ,ToastAndroid, TouchableOpacity,AsyncStorage} from 'react-native';
+import { PermissionsAndroid ,BackHandler, Platform , StyleSheet, Text, View ,ToastAndroid, TouchableOpacity,AsyncStorage} from 'react-native';
 
 const IMEI = require('react-native-imei');
 import Header from './template/Header';
 import { Button} from './common/';
+import Toast from 'react-native-simple-toast';
+import DeviceInfo from 'react-native-device-info';
 
-//const imei = IMEI.getImei();
+
 class ThisDevice extends Component {
   
 
@@ -13,26 +15,25 @@ class ThisDevice extends Component {
 
     super(); 
     this.state = {
-      manf:'brand',
-      model: 'model',
-      imei:'imei' ,
+      manf:DeviceInfo.getBrand(),
+      model: DeviceInfo.getModel(),
+      imei:'IMEI : ' + IMEI.getImei(),
       loading:false
     };
     
+  
   }
 
- 
+
 
   render() {
     return (
-      
     <View style={styles.container}>
-      <Header title='This Device'></Header>
-      <Text style={styles.whiteText}>{this.state.model}</Text>
+      <Text style={styles.whiteText}>Devoce Info</Text>
       <Text style={styles.whiteText}>{this.state.manf}</Text>
+      <Text style={styles.whiteText}>{this.state.model}</Text>
       <Text style={styles.whiteText}>{this.state.imei}</Text>
     </View>
-     
     );
   } 
 }

@@ -3,6 +3,15 @@
 
     <item
         is-multidex="false"
+        jar="C:\Users\ragrag\.android\build-cache\f1299642d365190e361f81ec90d013ec69514f2d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="32ac362d6f6a636ab4f737a90cda4a35c9402025">
+        <dex dex="F:\Projects\react-native\PhoneSecureRN\android\app\build\intermediates\pre-dexed\debug\classes_47d88200e247fc6c94f0e7ec51c1f920bb4fdb35.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\ragrag\.android\build-cache\130f9c757418493a71b5bccf145263ab79abc7d5\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -36,6 +45,24 @@
         revision="26.0.3"
         sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
         <dex dex="F:\Projects\react-native\PhoneSecureRN\android\app\build\intermediates\pre-dexed\debug\classes_1b7a464eb6aa72f23cfac5652221128245439804.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ragrag\.android\build-cache\16e67e89d632ce5e8b6988e0de84c6036cf1bcf4\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="4d4d98a0428b2e620e6b4a228ef9f7cb2f0debd2">
+        <dex dex="F:\Projects\react-native\PhoneSecureRN\android\app\build\intermediates\pre-dexed\debug\classes_e88235919eec838a9447dc3f0572d23af86adf26.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ragrag\.android\build-cache\3eedb9a2d95eb812b07d8b9454eba58351cf9999\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="d8fe6d91310b54734f454dd490c3c869f6290576">
+        <dex dex="F:\Projects\react-native\PhoneSecureRN\android\app\build\intermediates\pre-dexed\debug\classes_9081caf64e6d863c18676762ffa15ddba7847029.jar" />
     </item>
     <item
         is-multidex="false"
@@ -75,6 +102,24 @@
     </item>
     <item
         is-multidex="false"
+        jar="F:\Projects\react-native\PhoneSecureRN\node_modules\react-native-device-info\android\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="7c9450bcd83c55429cc3e678abe447c29c5599ad">
+        <dex dex="F:\Projects\react-native\PhoneSecureRN\android\app\build\intermediates\pre-dexed\debug\classes_ac877b43ccc8bf9b419a23dd24de6988356360b1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ragrag\.android\build-cache\d1f885b52e4446f6fce1df2dee8a774f553af599\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="c1e9d140d3260619ce2fa991d30b14b531d61dec">
+        <dex dex="F:\Projects\react-native\PhoneSecureRN\android\app\build\intermediates\pre-dexed\debug\classes_59fec9307e9163159afb6e97d47ed93b345406a8.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\ragrag\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.6.0\69edde9fc4b01c9fd51d25b83428837478c27254\okhttp-3.6.0.jar"
         jumboMode="false"
         optimize="true"
@@ -84,12 +129,39 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\ragrag\.android\build-cache\04ec39f786f30c1c048cd6946ad8f743f9be4a82\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="8d813c05361147f6f515f749df19223cd6256314">
+        <dex dex="F:\Projects\react-native\PhoneSecureRN\android\app\build\intermediates\pre-dexed\debug\classes_ac0f4ab7849f4e7f3f5afada8b66f0549c1f318b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ragrag\.android\build-cache\53791a3cac38e5321f1f8a898c025880842b0411\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="6d468b69c3baff6635f9a7d09a558ced41fdbdf4">
+        <dex dex="F:\Projects\react-native\PhoneSecureRN\android\app\build\intermediates\pre-dexed\debug\classes_da4ee659e6cbed8952457234d568355dc1b6e668.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\ragrag\.android\build-cache\59c71c7987cae41d8aaf5c38444e4968a926ee09\output\jars\libs\infer-annotations-4.0.jar"
         jumboMode="false"
         optimize="true"
         revision="26.0.3"
         sha1="9809e90be788acdb479b2b44e2112f3295a03068">
         <dex dex="F:\Projects\react-native\PhoneSecureRN\android\app\build\intermediates\pre-dexed\debug\infer-annotations-4.0_ec4d9e93263385119c687ac45b5806aa4bfde847.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Projects\react-native\PhoneSecureRN\node_modules\react-native-exit-app\android\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="3f9b463dd61b0ad448b36859570c0354189a0cd7">
+        <dex dex="F:\Projects\react-native\PhoneSecureRN\android\app\build\intermediates\pre-dexed\debug\classes_749cd2a64ccba73c1d22c8dfb1d9eab31ed45f89.jar" />
     </item>
     <item
         is-multidex="false"

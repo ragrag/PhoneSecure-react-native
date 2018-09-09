@@ -1,12 +1,34 @@
 import React, {Component}  from 'react';
-import {View,Text,StyleSheet,AsyncStorage,ActivityIndicator} from 'react-native';
-
-
+import {View,Text,StyleSheet,AsyncStorage,ActivityIndicator,PermissionsAndroid} from 'react-native';
+import RNExitApp from 'react-native-exit-app';
+import { Button} from './common';
+import Toast from 'react-native-simple-toast';
+async function requestPhoneState() {
+    try {
+      const granted = await PermissionsAndroid.request(
+        PermissionsAndroid.PERMISSIONS.READ_PHONE_STATE,
+        {
+          'title': 'Access device info ',
+          'message': 'Applications needs to access device information such as IMEI and model/brand'
+        }
+      )
+      if (granted === PermissionsAndroid.RESULTS.GRANTED) {
+        Toast.show('state permission Granted');
+        console.log("granted");
+  
+      } else {
+        Toast.show('state permission denied');
+        RNExitApp.exitApp();
+      }
+    } catch (err) {
+      console.warn(err)
+    }
+}
 class Splash extends Component {
 
 
     componentDidMount() {
-        
+        requestPhoneState();
         AsyncStorage.getItem('login_token').then((token)=>{
             if(token){
                 console.log("Going Home");
@@ -26,6 +48,7 @@ class Splash extends Component {
         <View style={styles.container}>
             <ActivityIndicator size={"small"}/>
             <Text style={styles.loadingText} >Loading..</Text>
+           
         </View>
 
         ); 

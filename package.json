@@ -7,9 +7,11 @@
     "test": "jest"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "react": "16.4.1",
     "react-native": "0.55.4",
-    "axios": "^0.18.0",
+    "react-native-device-info": "^0.22.5",
+    "react-native-exit-app": "^1.0.0",
     "react-native-imei": "^0.1.2",
     "react-native-simple-toast": "0.0.8",
     "react-navigation": "^2.12.1"

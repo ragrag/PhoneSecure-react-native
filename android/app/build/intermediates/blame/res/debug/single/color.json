@@ -8,6 +8,10 @@
         "source": "C:\\Users\\ragrag\\.android\\build-cache\\b34a75f6d3ad360b2771b308ff2e205a97659aed\\output\\res\\color\\abc_hint_foreground_material_dark.xml"
     },
     {
+        "merged": "F:\\Projects\\react-native\\PhoneSecureRN\\android\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_tint.xml",
+        "source": "C:\\Users\\ragrag\\.android\\build-cache\\04ec39f786f30c1c048cd6946ad8f743f9be4a82\\output\\res\\color\\common_google_signin_btn_tint.xml"
+    },
+    {
         "merged": "F:\\Projects\\react-native\\PhoneSecureRN\\android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
         "source": "C:\\Users\\ragrag\\.android\\build-cache\\b34a75f6d3ad360b2771b308ff2e205a97659aed\\output\\res\\color\\abc_primary_text_material_dark.xml"
     },
@@ -32,6 +36,10 @@
         "source": "C:\\Users\\ragrag\\.android\\build-cache\\b34a75f6d3ad360b2771b308ff2e205a97659aed\\output\\res\\color\\abc_tint_edittext.xml"
     },
     {
+        "merged": "F:\\Projects\\react-native\\PhoneSecureRN\\android\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\ragrag\\.android\\build-cache\\04ec39f786f30c1c048cd6946ad8f743f9be4a82\\output\\res\\color\\common_google_signin_btn_text_dark.xml"
+    },
+    {
         "merged": "F:\\Projects\\react-native\\PhoneSecureRN\\android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
         "source": "C:\\Users\\ragrag\\.android\\build-cache\\b34a75f6d3ad360b2771b308ff2e205a97659aed\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
     },
@@ -50,6 +58,10 @@
     {
         "merged": "F:\\Projects\\react-native\\PhoneSecureRN\\android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_light.xml",
         "source": "C:\\Users\\ragrag\\.android\\build-cache\\b34a75f6d3ad360b2771b308ff2e205a97659aed\\output\\res\\color\\abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "F:\\Projects\\react-native\\PhoneSecureRN\\android\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\ragrag\\.android\\build-cache\\04ec39f786f30c1c048cd6946ad8f743f9be4a82\\output\\res\\color\\common_google_signin_btn_text_light.xml"
     },
     {
         "merged": "F:\\Projects\\react-native\\PhoneSecureRN\\android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
