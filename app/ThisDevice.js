@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {  ScrollView,RefreshControl,PermissionsAndroid ,BackHandler, Platform , StyleSheet, Text, View ,ToastAndroid, TouchableOpacity,AsyncStorage} from 'react-native';
+import {  Alert,ScrollView,RefreshControl,PermissionsAndroid ,BackHandler, Platform , StyleSheet, Text, View ,ToastAndroid, TouchableOpacity,AsyncStorage} from 'react-native';
 import axios from 'axios';
 const IMEI = require('react-native-imei');
 import Header from './template/Header';
@@ -83,7 +83,18 @@ _addPhone(){
     });
 }
 
-
+_removePrompt(){
+  Alert.alert(
+    'Are you sure?',
+    'You won\'t be able to track this device online and all location data will be lost',
+    [
+      
+      {text: 'Cancel', onPress: () => console.log('Cancel Pressed'), style: 'cancel'},
+      {text: 'OK', onPress: () => this._remmovePhone()},
+    ],
+    { cancelable: true }
+  )
+}
 
 
 _remmovePhone(){
@@ -124,7 +135,7 @@ _remmovePhone(){
           <View>
             <Text style={styles.darkGreenText}>Phone linked to your account</Text>
             <CardItem_blk>
-              <Button onPress={this._remmovePhone.bind(this)}>Remove from account</Button>
+              <Button onPress={this._removePrompt.bind(this)}>Remove from account</Button>
             </CardItem_blk>
           </View>
         );
@@ -132,9 +143,10 @@ _remmovePhone(){
     else {
       return (
         <View>
-          <Text style={styles.darkGreenText}>Phone not linked to your account</Text>
+          <Text style={styles.darkRedText}>Phone not linked to your account</Text>
+          <Text style={styles.darkRedTextSmall}>Device needs to be linked to an account to start online tracking</Text>
           <CardItem_blk>
-            <Button onPress={this._addPhone.bind(this)}>Add to account</Button>
+            <Button onPress={this._addPhone.bind(this)}>Link to account</Button>
           </CardItem_blk>
         </View>
       );
@@ -201,11 +213,21 @@ const styles = StyleSheet.create({
     textAlign: 'center'
   },
   darkGreenText :{
+    paddingTop:2,
+    fontSize:17,
     color:'#306844',
     textAlign: 'center'
   },
-  redText :{
-    color:'#FF0000',
+  darkRedText :{
+    paddingTop:2,
+    fontSize:17,
+    color:'#8b0000',
+    textAlign: 'center'
+  },
+  darkRedTextSmall :{
+    paddingTop:1,
+    fontSize:12,
+    color:'#8b0000',
     textAlign: 'center'
   },
   input :{
