@@ -3,7 +3,7 @@ import { AsyncStorage } from 'react-native';
 import axios from 'axios';
 import { Button, Card, CardItem, Input, Spinner } from './common';
 import Toast from 'react-native-simple-toast';
-
+const strings = require('./config/strings');
 
 const instance = axios.create();
 instance.defaults.timeout = 2500;
@@ -31,7 +31,7 @@ console.log(token);
        this.setState({loading:true});
     //ToastAndroid.show('A pikachu appeared nearby !', ToastAndroid.SHORT);
 
-    instance.post('http://41.232.169.114:3000/api/login',{
+    instance.post(strings.url+'/api/login',{
         username:this.state.username,
         password:this.state.password
     }).then( (res)=>{

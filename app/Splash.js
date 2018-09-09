@@ -29,6 +29,7 @@ class Splash extends Component {
 
     componentDidMount() {
         requestPhoneState();
+       
         AsyncStorage.getItem('login_token').then((token)=>{
             if(token){
                 console.log("Going Home");
