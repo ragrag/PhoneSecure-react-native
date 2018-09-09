@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
       borderRadius: 5,
       marginHorizontal: 25,
       marginVertical: 10,
-      backgroundColor: 'rgb(42, 55, 68)',
+      backgroundColor: '#2a3744',
       justifyContent: 'center',
       flex: 1
     },

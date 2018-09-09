@@ -3,7 +3,7 @@ import {BackHandler, Platform , StyleSheet, Text, View ,ToastAndroid, TouchableO
 
 
 import Header from './template/Header';
-import { Button} from './common/';
+import { Button,CardItem_blk} from './common/';
 
 
 
@@ -18,9 +18,10 @@ class Profile extends Component {
     return (
       
     <View style={styles.container}>
-      <Header title='Account'></Header>
+      
+<CardItem_blk>
       <Button onPress={this._logout.bind(this)}>Logout</Button>
-       
+       </CardItem_blk>
     </View>
      
     );
@@ -40,6 +41,10 @@ const styles = StyleSheet.create({
   }, 
   whiteText :{
     color:'#FFFFFF',
+    textAlign: 'center'
+  },
+  yellowText :{
+    color:'#FFFF00',
     textAlign: 'center'
   },
   input :{

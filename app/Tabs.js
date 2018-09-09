@@ -26,6 +26,7 @@ Profile: Profile,
     style: {
       backgroundColor: '#2a3744',
     },
+    indicatorStyle: { backgroundColor: 'transparent', } 
   }
 
 });

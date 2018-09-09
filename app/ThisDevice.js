@@ -3,7 +3,7 @@ import {  ScrollView,RefreshControl,PermissionsAndroid ,BackHandler, Platform , 
 import axios from 'axios';
 const IMEI = require('react-native-imei');
 import Header from './template/Header';
-import { Button, CardItem,Spinner} from './common/';
+import { Button, CardItem_blk,Spinner} from './common/';
 import Toast from 'react-native-simple-toast';
 import DeviceInfo from 'react-native-device-info';
 const strings = require('./config/strings')
@@ -18,7 +18,7 @@ class ThisDevice extends Component {
 
     super(); 
     this.state = {
-      manf:DeviceInfo.getBrand(),
+      manf:DeviceInfo.getBrand().toUpperCase(),
       model: DeviceInfo.getModel(),
       imei:'IMEI : ' + IMEI.getImei(),
       loading:true,
@@ -122,20 +122,20 @@ _remmovePhone(){
       if(this.state.owner){
         return (
           <View>
-            <Text>Phone linked to your account</Text>
-            <CardItem>
+            <Text style={styles.darkGreenText}>Phone linked to your account</Text>
+            <CardItem_blk>
               <Button onPress={this._remmovePhone.bind(this)}>Remove from account</Button>
-            </CardItem>
+            </CardItem_blk>
           </View>
         );
     }
     else {
       return (
         <View>
-          <Text>Phone not linked to your account</Text>
-          <CardItem>
+          <Text style={styles.darkGreenText}>Phone not linked to your account</Text>
+          <CardItem_blk>
             <Button onPress={this._addPhone.bind(this)}>Add to account</Button>
-          </CardItem>
+          </CardItem_blk>
         </View>
       );
     }
@@ -143,10 +143,10 @@ _remmovePhone(){
     else {
       return (
         <View>
-          <Text>Error retreiving data</Text>
-          <CardItem>
-          <Button onPress={this._checkDevice.bind(this)}>Try Again</Button>
-          </CardItem>
+          <Text style={styles.redText}>Error retreiving data</Text>
+          <CardItem_blk>
+            <Button onPress={this._checkDevice.bind(this)}>Try Again</Button>
+          </CardItem_blk>
         </View>
       );
     }
@@ -164,13 +164,13 @@ _remmovePhone(){
         }>
         <View>
          
-      <Text style={styles.whiteText}>Devoce Info</Text>
-      <Text style={styles.whiteText}>{this.state.manf}</Text>
-      <Text style={styles.whiteText}>{this.state.model}</Text>
-      <Text style={styles.whiteText}>{this.state.imei}</Text>
-      <CardItem>
+        <View style={styles.padding7}>
+          <Text style={styles.headerWhiteText}>{this.state.manf}</Text>
+          <Text style={styles.headerWhiteText}>{this.state.model}</Text>
+          <Text style={styles.headerWhiteText}>{this.state.imei}</Text>
+       </View>
             { this._renderButton() }
-        </CardItem>
+      
         </View>
       </ScrollView>
     );
@@ -188,14 +188,31 @@ const styles = StyleSheet.create({
     flexDirection:'row', 
     height:50
   },
+  padding7: {
+    paddingTop:7
+  },
+  headerWhiteText :{
+    fontSize:16,
+    color:'#FFFFFF',
+    textAlign: 'center'
+  },
   whiteText :{
     color:'#FFFFFF',
+    textAlign: 'center'
+  },
+  darkGreenText :{
+    color:'#306844',
+    textAlign: 'center'
+  },
+  redText :{
+    color:'#FF0000',
     textAlign: 'center'
   },
   input :{
     height:50,
     color:'#FFFFFF'
-  }
+  },
+
 });
 
 export default ThisDevice;

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AsyncStorage } from 'react-native';
+import {Platform,View, AsyncStorage,StyleSheet } from 'react-native';
 import axios from 'axios';
 import { Button, Card, CardItem, Input, Spinner } from './common';
 import Toast from 'react-native-simple-toast';
@@ -80,6 +80,8 @@ console.log(token);
 
   render(){
     return (
+
+      <View style={styles.container}>
       <Card>
 
         <CardItem>
@@ -105,11 +107,41 @@ console.log(token);
         </CardItem>
 
       </Card>
+      </View>
     );
   }
 
 }
 
+
+const styles = StyleSheet.create({
+  container:{
+    flex:1,
+    paddingTop: Platform.OS === 'ios' ? 0 : 0,
+    backgroundColor:'#212121'
+  },
+  
+  appCol: {
+    flexDirection:'row', 
+    height:50
+  },
+  whiteText :{
+    color:'#FFFFFF',
+    textAlign: 'center'
+  },
+  yellowText :{
+    color:'#FFFF00',
+    textAlign: 'center'
+  },
+  redText :{
+    color:'#FF0000',
+    textAlign: 'center'
+  },
+  input :{
+    height:50,
+    color:'#FFFFFF'
+  }
+});
 
 
 

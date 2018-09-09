@@ -20,7 +20,12 @@ const RootNavigator = StackNavigator({
         navigationOptions: ({ navigation }) => ({
         title: 'PhoneSecure',
         headerLeft:null,
-        headerTitleStyle: { fontFamily: "Montserrat-Regular", fontSize: 16, fontWeight: "normal", justifyContent: "center", alignSelf: "center", width: "35%" },
+          headerStyle: {
+        
+           backgroundColor:'#242f3a',
+            /* this will style the header, but does NOT change the text */
+           },
+        headerTitleStyle: { color:'#FFFFFF', fontFamily: "Montserrat-Regular", fontSize: 16, fontWeight: "normal", justifyContent: "center", alignSelf: "center", width: "35%" },
         })
     },
 
