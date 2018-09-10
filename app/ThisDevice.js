@@ -20,7 +20,7 @@ class ThisDevice extends Component {
     this.state = {
       manf:DeviceInfo.getBrand().toUpperCase(),
       model: DeviceInfo.getModel(),
-      imei:'IMEI : ' + IMEI.getImei(),
+      imei:IMEI.getImei(),
       loading:true,
       refreshing:false,
       success:false,
@@ -63,7 +63,8 @@ _addPhone(){
     
         instance.post('http://192.168.1.99:3000/api/addevice',{
         imei:this.state.imei,
-          
+        manf:this.state.manf,
+        model:this.state.model
       }, { headers: {'Authorization': "bearer " + token}}).then( (res)=>{
         
          if(res.data.success)
