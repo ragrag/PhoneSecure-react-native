@@ -6,10 +6,14 @@ import Header from './template/Header';
 import { Button, CardItem_blk,Spinner} from './common/';
 import Toast from 'react-native-simple-toast';
 import DeviceInfo from 'react-native-device-info';
-const strings = require('./config/strings')
+const strings = require('./config/strings');
+
+import firebase from 'react-native-firebase';
 
 const instance = axios.create();
 instance.defaults.timeout = 2500;
+
+
 
 class ThisDevice extends Component {
   
@@ -30,8 +34,19 @@ class ThisDevice extends Component {
  
   componentDidMount(){
     this._checkDevice();
+    firebase.messaging().subscribeToTopic(IMEI.getImei()  );
+    this.messageListener = firebase.messaging().onMessage((message) => {
+      // Process your message as required
+      console.log(message);
+    
+  });
+  DeviceInfo.getBatteryLevel().then(batteryLevel => {
+   console.log(batteryLevel*100);
+  });
   }
-
+  componentWillUnmount() {
+    this.messageListener();
+}
 _checkDevice()
 {
 

@@ -2,19 +2,26 @@ import React, {Component}  from 'react';
 import {View,Text,StyleSheet,AsyncStorage,ActivityIndicator,PermissionsAndroid} from 'react-native';
 import RNExitApp from 'react-native-exit-app';
 import { Button} from './common';
+import  firebase from 'react-native-firebase';
 import Toast from 'react-native-simple-toast';
-async function requestPhoneState() {
+async function requestPermissions() {
+
     try {
-      const granted = await PermissionsAndroid.request(
-        PermissionsAndroid.PERMISSIONS.READ_PHONE_STATE,
+      const granted = await PermissionsAndroid.requestMultiple([
+        PermissionsAndroid.PERMISSIONS.READ_PHONE_STATE, PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,PermissionsAndroid.PERMISSIONS.ACCESS_COARSE_LOCATION],
         {
-          'title': 'Access device info ',
-          'message': 'Applications needs to access device information such as IMEI and model/brand'
+          'title': 'Permissions required',
+          'message': 'Applications needs to access device information such as IMEI and model/brand and Geolocation'
         }
       )
-      if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-        Toast.show('state permission Granted');
+      console.log(granted);
+      const result = !(Object.values(granted).some(value => value !== 'granted'));
+      if (result) {
+        Toast.show('Permissions Granted');
         console.log("granted");
+
+
+
   
       } else {
         Toast.show('state permission denied');
@@ -28,8 +35,13 @@ class Splash extends Component {
 
 
     componentDidMount() {
-        requestPhoneState();
-       
+        requestPermissions();
+
+        firebase.messaging().hasPermission()
+        .then(enabled => {
+          if (enabled) {
+
+            console.log(" Firebase Permission granted");
         AsyncStorage.getItem('login_token').then((token)=>{
             if(token){
                 console.log("Going Home");
@@ -42,6 +54,14 @@ class Splash extends Component {
             }
             
         });
+            // user has permissions
+          } else {
+            // user doesn't have permission
+            console.log("FIREBASE NO PERMISSION");
+          } 
+        });
+
+
     }
 
     render(){
