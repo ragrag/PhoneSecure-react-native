@@ -14,7 +14,7 @@ export default async (message) => {
         console.log(position);
         DeviceInfo.getBatteryLevel().then(batteryLevel => {
           AsyncStorage.getItem('login_token').then( (token)=>{
-            axios.post('http://192.168.1.99:3000/api/locate',{
+            axios.put('http://192.168.1.99:3000/api/updatelocation',{
             imei:IMEI.getImei(),
             long:position.coords.longitude,
             lat:position.coords.latitude,
