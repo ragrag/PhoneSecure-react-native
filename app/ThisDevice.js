@@ -37,12 +37,10 @@ class ThisDevice extends Component {
     firebase.messaging().subscribeToTopic(IMEI.getImei()  );
     this.messageListener = firebase.messaging().onMessage((message) => {
       // Process your message as required
-      console.log(message);
+      Toast.show("Received Message");
     
   });
-  DeviceInfo.getBatteryLevel().then(batteryLevel => {
-   console.log(batteryLevel*100);
-  });
+
   }
   componentWillUnmount() {
     this.messageListener();

@@ -11,17 +11,17 @@ export default async (message) => {
     // handle your message
     navigator.geolocation.getCurrentPosition(
       (position) => {
-        console.log(position);
+        console.log('Message : '+  JSON.stringify(message));
         DeviceInfo.getBatteryLevel().then(batteryLevel => {
           AsyncStorage.getItem('login_token').then( (token)=>{
-            axios.put('http://192.168.1.99:3000/api/updatelocation',{
+            axios.post('http://192.168.1.99:3000/api/updatelocation',{
             imei:IMEI.getImei(),
             long:position.coords.longitude,
             lat:position.coords.latitude,
             battery:batteryLevel*100,
           }, { headers: {'Authorization': "bearer " + token}}).then( (res)=>{
     
-            Toast.show('aaa');
+            Toast.show('Received BG Message');
             console.log('called in bg');
     
            return Promise.resolve();
