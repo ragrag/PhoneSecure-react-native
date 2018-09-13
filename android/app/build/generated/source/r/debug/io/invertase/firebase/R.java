@@ -722,7 +722,7 @@ public final class R {
         public static final int catalyst_report_button = 0x7f0b0035;
         public static final int catalyst_settings = 0x7f0b0036;
         public static final int catalyst_settings_title = 0x7f0b0037;
-        public static final int status_bar_notification_info_overflow = 0x7f0b0055;
+        public static final int status_bar_notification_info_overflow = 0x7f0b0059;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat = 0x7f0c0000;
@@ -1345,6 +1345,6 @@ public final class R {
         public static final int ViewStubCompat_android_inflatedId = 2;
     }
     public static final class xml {
-        public static final int preferences = 0x7f0e0000;
+        public static final int preferences = 0x7f0e0001;
     }
 }

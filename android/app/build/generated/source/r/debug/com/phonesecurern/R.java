@@ -2901,8 +2901,12 @@ public final class R {
     public static final int google_crash_reporting_api_key=0x7f0b0051;
     public static final int google_storage_bucket=0x7f0b0052;
     public static final int project_id=0x7f0b0053;
-    public static final int search_menu_title=0x7f0b0054;
-    public static final int status_bar_notification_info_overflow=0x7f0b0055;
+    public static final int rnsb_allow_foreground=0x7f0b0054;
+    public static final int rnsb_content_authority=0x7f0b0055;
+    public static final int rnsb_default_timeout=0x7f0b0056;
+    public static final int rnsb_sync_account_type=0x7f0b0057;
+    public static final int search_menu_title=0x7f0b0058;
+    public static final int status_bar_notification_info_overflow=0x7f0b0059;
   }
   public static final class style {
     public static final int AlertDialog_AppCompat=0x7f0c0000;
@@ -9916,6 +9920,8 @@ public final class R {
     public static final int ViewStubCompat_android_inflatedId=2;
   }
   public static final class xml {
-    public static final int preferences=0x7f0e0000;
+    public static final int authenticator=0x7f0e0000;
+    public static final int preferences=0x7f0e0001;
+    public static final int sync_adapter=0x7f0e0002;
   }
 }

@@ -563,6 +563,10 @@
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAIpVjD31K-A5ob2Nuz2itg_9FxJafCsdI</string>
     <string name="google_storage_bucket" translatable="false">phone-e17cc.appspot.com</string>
     <string name="project_id" translatable="false">phone-e17cc</string>
+    <string name="rnsb_allow_foreground">true</string>
+    <string name="rnsb_content_authority" translatable="false">com.phonesecurern</string>
+    <string name="rnsb_default_timeout" translatable="false">3000</string>
+    <string name="rnsb_sync_account_type" translatable="false">com.phonesecurern</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>

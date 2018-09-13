@@ -35,6 +35,8 @@
         </intent-filter>
       </activity>
       <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+
+      
     </application>
 
 </manifest>

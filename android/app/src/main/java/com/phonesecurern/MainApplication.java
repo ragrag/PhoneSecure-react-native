@@ -3,6 +3,8 @@ package com.phonesecurern;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.fnp.reactnativesyncadapter.SyncAdapterPackage;
+import eu.sigrlami.rnsimdata.RNSimDataReactPackage;
 import io.invertase.firebase.RNFirebasePackage;
 import io.invertase.firebase.messaging.RNFirebaseMessagingPackage; // <-- Add this line
 
@@ -13,7 +15,6 @@ import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
-
 import java.util.Arrays;
 import java.util.List;
 
@@ -29,6 +30,8 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new SyncAdapterPackage(),
+            new RNSimDataReactPackage(),
             new RNFirebasePackage(),
             new RNFirebaseMessagingPackage() ,
             new RNExitAppPackage(),

@@ -768,6 +768,10 @@
         "source": "C:\\Users\\ragrag\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\c257403503f30c96365e7c56a4623919\\res\\drawable-hdpi-v4\\googleg_disabled_color_18.png"
     },
     {
+        "merged": "F:\\Projects\\react-native\\PhoneSecureRN\\android\\app\\build\\intermediates\\res\\merged\\debug\\xml_sync_adapter.xml.flat",
+        "source": "F:\\Projects\\react-native\\PhoneSecureRN\\node_modules\\react-native-sync-adapter\\android\\build\\intermediates\\packaged_res\\debug\\xml\\sync_adapter.xml"
+    },
+    {
         "merged": "F:\\Projects\\react-native\\PhoneSecureRN\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
         "source": "C:\\Users\\ragrag\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\d7eaf260c20f81f91db5024a13b8c28e\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
@@ -1578,6 +1582,10 @@
     {
         "merged": "F:\\Projects\\react-native\\PhoneSecureRN\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_mode_bar.xml.flat",
         "source": "C:\\Users\\ragrag\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\d7eaf260c20f81f91db5024a13b8c28e\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "F:\\Projects\\react-native\\PhoneSecureRN\\android\\app\\build\\intermediates\\res\\merged\\debug\\xml_authenticator.xml.flat",
+        "source": "F:\\Projects\\react-native\\PhoneSecureRN\\node_modules\\react-native-sync-adapter\\android\\build\\intermediates\\packaged_res\\debug\\xml\\authenticator.xml"
     },
     {
         "merged": "F:\\Projects\\react-native\\PhoneSecureRN\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",

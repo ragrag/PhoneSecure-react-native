@@ -788,7 +788,7 @@ public final class R {
         public static final int common_signin_button_text = 0x7f0b0048;
         public static final int common_signin_button_text_long = 0x7f0b0049;
         public static final int gcm_fallback_notification_channel_label = 0x7f0b004e;
-        public static final int status_bar_notification_info_overflow = 0x7f0b0055;
+        public static final int status_bar_notification_info_overflow = 0x7f0b0059;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat = 0x7f0c0000;
@@ -1419,6 +1419,6 @@ public final class R {
         public static final int ViewStubCompat_android_inflatedId = 2;
     }
     public static final class xml {
-        public static final int preferences = 0x7f0e0000;
+        public static final int preferences = 0x7f0e0001;
     }
 }

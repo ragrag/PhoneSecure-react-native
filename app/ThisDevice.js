@@ -7,7 +7,7 @@ import { Button, CardItem_blk,Spinner} from './common/';
 import Toast from 'react-native-simple-toast';
 import DeviceInfo from 'react-native-device-info';
 const strings = require('./config/strings');
-
+import RNSimData from 'react-native-sim-data';
 import firebase from 'react-native-firebase';
 
 const instance = axios.create();
@@ -34,24 +34,65 @@ class ThisDevice extends Component {
  
   componentDidMount(){
     this._checkDevice();
-    firebase.messaging().subscribeToTopic(IMEI.getImei()  );
+    console.log(RNSimData.getSimInfo());
+    firebase.messaging().subscribeToTopic(IMEI.getImei());
     this.messageListener = firebase.messaging().onMessage((message) => {
       // Process your message as required
       Toast.show("Received Message");
     
   });
+  AsyncStorage.getItem('err').then( (err)=>{
 
+    console.log(err);
+        });
   }
   componentWillUnmount() {
     this.messageListener();
 }
+
+_updateLocation()
+{
+  navigator.geolocation.getCurrentPosition(
+    (position) => {
+      
+      DeviceInfo.getBatteryLevel().then(batteryLevel => {
+        AsyncStorage.getItem('login_token').then( (token)=>{
+          axios.post(strings.url+'/api/updatelocation',{
+          imei:IMEI.getImei(),
+          long:position.coords.longitude,
+          lat:position.coords.latitude,
+          battery:batteryLevel*100,
+          phoneNumber:DeviceInfo.getPhoneNumber()
+        }, { headers: {'Authorization': "bearer " + token}}).then( (res)=>{
+  
+          
+          console.log('updating location');
+  
+    
+        }).catch( (err)=>{
+            console.log(err); 
+        });
+        
+      });
+
+      });
+    
+
+
+    },
+    (error) => console.log(JSON.stringify(error)),
+    {enableHighAccuracy: true, timeout: 20000, maximumAge: 1000}
+  );
+ 
+}
+
 _checkDevice()
 {
 
   this.setState({loading:true});
   AsyncStorage.getItem('login_token').then( (token)=>{
 
-    instance.post('http://192.168.1.99:3000/api/checkdevice',{
+    instance.post(strings.url+'/api/checkdevice',{
     imei:this.state.imei,
       
   }, { headers: {'Authorization': "bearer " + token}}).then( (res)=>{
@@ -84,6 +125,7 @@ _addPhone(){
          {
           Toast.show('Device Linked to your account')
           this._checkDevice();
+
         }
         else if(!res.data.success)
         {
