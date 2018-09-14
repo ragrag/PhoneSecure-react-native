@@ -82,8 +82,7 @@ export default async (message) => {
             
             console.log(JSON.stringify(error))
     
-          },
-         {enableHighAccuracy: true, timeout: 25000, maximumAge: 3600000 }
+          }
         );
        
       
