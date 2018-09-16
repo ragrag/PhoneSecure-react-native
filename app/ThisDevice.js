@@ -115,10 +115,11 @@ _checkDevice()
 _addPhone(){
   AsyncStorage.getItem('login_token').then( (token)=>{
     
-        instance.post('http://192.168.1.99:3000/api/addevice',{
+        instance.post(strings.url+'/api/addevice',{
         imei:this.state.imei,
         manf:this.state.manf,
-        model:this.state.model
+        model:this.state.model,
+        api:DeviceInfo.getAPILevel()
       }, { headers: {'Authorization': "bearer " + token}}).then( (res)=>{
         
          if(res.data.success)
@@ -157,7 +158,7 @@ _remmovePhone(){
   console.log("res");
   AsyncStorage.getItem('login_token').then( (token)=>{
     
-        instance.post('http://192.168.1.99:3000/api/removedevice',{
+        instance.post(strings.url+'/api/removedevice',{
         imei:this.state.imei,
           
       }, { headers: {'Authorization': "bearer " + token}}).then( (res)=>{

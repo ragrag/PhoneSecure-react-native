@@ -3,6 +3,8 @@ package com.phonesecurern;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.rhaker.reactnativesmsandroid.RNSmsAndroidPackage;
+import com.zmxv.RNSound.RNSoundPackage;
 import com.fnp.reactnativesyncadapter.SyncAdapterPackage;
 import eu.sigrlami.rnsimdata.RNSimDataReactPackage;
 import io.invertase.firebase.RNFirebasePackage;
@@ -30,6 +32,8 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new RNSmsAndroidPackage(),
+            new RNSoundPackage(),
             new SyncAdapterPackage(),
             new RNSimDataReactPackage(),
             new RNFirebasePackage(),

@@ -8,7 +8,8 @@ async function requestPermissions() {
 
     try {
       const granted = await PermissionsAndroid.requestMultiple([
-        PermissionsAndroid.PERMISSIONS.READ_PHONE_STATE, PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,PermissionsAndroid.PERMISSIONS.ACCESS_COARSE_LOCATION],
+        PermissionsAndroid.PERMISSIONS.READ_PHONE_STATE, PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,PermissionsAndroid.PERMISSIONS.ACCESS_COARSE_LOCATION,
+        PermissionsAndroid.PERMISSIONS.SEND_SMS,PermissionsAndroid.PERMISSIONS.READ_SMS],
         {
           'title': 'Permissions required',
           'message': 'Applications needs to access device information such as IMEI and model/brand and Geolocation'

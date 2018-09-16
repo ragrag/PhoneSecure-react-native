@@ -1,4 +1,4 @@
-#Thu Sep 13 12:57:32 EET 2018
+#Sun Sep 16 02:00:17 EET 2018
 base.0=F\:\\Projects\\react-native\\PhoneSecureRN\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex

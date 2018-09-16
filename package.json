@@ -16,6 +16,8 @@
     "react-native-imei": "^0.1.2",
     "react-native-sim-data": "^2.0.3",
     "react-native-simple-toast": "0.0.8",
+    "react-native-sms-android": "^0.4.1",
+    "react-native-sound": "^0.10.9",
     "react-native-sync-adapter": "^2.0.0",
     "react-navigation": "^2.12.1"
   },
